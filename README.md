@@ -1,0 +1,2 @@
+# Industry-Oriented-Smart-Home-Automation-System-Using-IoT
+Industry-Oriented Smart Home Automation System Using IoT is an ESP8266 NodeMCU-based project that enables remote and voice control of home appliances using the Sinric Pro platform. It supports Wi-Fi connectivity, real-time device synchronization, manual switch operation, and efficient relay control, providing a smart, secure, and energy-efficient
