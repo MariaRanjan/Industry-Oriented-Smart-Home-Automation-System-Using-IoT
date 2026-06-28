@@ -1,82 +1,143 @@
-Industry-Oriented Smart Home Automation System Using IoT
-Description
+# Industry-Oriented Smart Home Automation System Using IoT
 
-This project presents an Industry-Oriented Smart Home Automation System Using IoT developed using the ESP8266 NodeMCU, 4-Channel Relay Module, and the Sinric Pro IoT Platform. The system enables users to remotely monitor and control household electrical appliances through a smartphone or voice assistants such as Amazon Alexa and Google Assistant. It also supports manual control using push buttons, ensuring uninterrupted operation even without internet connectivity.
+## Overview
 
-Features
-Remote control of appliances using Wi-Fi
+The Industry-Oriented Smart Home Automation System Using IoT is designed to provide remote and voice-controlled operation of household electrical appliances using the ESP8266 NodeMCU and the Sinric Pro IoT platform. The system allows users to control appliances through a smartphone or voice assistants such as Amazon Alexa and Google Assistant while also supporting manual switch operation.
 
-Voice control using Amazon Alexa and Google Assistant
+---
 
-Four-channel relay-based appliance control
+## Objectives
 
-Manual push-button operation
+- Develop a smart home automation system using IoT.
+- Enable remote control of electrical appliances over Wi-Fi.
+- Provide voice control through Alexa and Google Assistant.
+- Reduce energy consumption through efficient appliance management.
+- Improve user convenience and home automation.
 
-Real-time synchronization with Sinric Pro cloud
+---
 
-Automatic restoration of device states after power failure
+## Features
 
-User-friendly and energy-efficient design
+- Wi-Fi based smart home automation
+- Remote appliance control using Sinric Pro
+- Voice control with Amazon Alexa and Google Assistant
+- Manual push-button control
+- Four-channel relay operation
+- Real-time device synchronization
+- Automatic restoration of relay states after restart
+- Easy installation and low-cost implementation
 
-Hardware Components
-ESP8266 NodeMCU
+---
 
-4-Channel Relay Module
+## Hardware Components
 
-Push Buttons
+- ESP8266 NodeMCU
+- 4-Channel Relay Module
+- Push Buttons
+- Breadboard or PCB
+- Jumper Wires
+- Power Supply
+- LED/Bulb/Fan (Load)
 
-Jumper Wires
+---
 
-Breadboard/PCB
+## Software Requirements
 
-Power Supply
+- Arduino IDE
+- ESP8266 Board Package
+- Sinric Pro Library
+- ESP8266WiFi Library
+- ArduinoJson Library
 
-Electrical Appliances (Bulbs, Fans, etc.)
+---
 
-Software Requirements
-Arduino IDE
+## Circuit Connections
 
-ESP8266 Board Package
+| ESP8266 Pin | Relay |
+|-------------|-------|
+| D1 | Relay 1 |
+| D2 | Relay 2 |
+| D5 | Relay 3 |
+| D6 | Relay 4 |
 
-Sinric Pro Library
+| ESP8266 Pin | Switch |
+|-------------|--------|
+| D7 | Switch 1 |
+| D3 | Switch 2 |
+| D4 | Switch 3 |
+| RX | Switch 4 |
 
-ArduinoJson Library
+---
 
-ESP8266WiFi Library
+## Working Principle
 
-Working Principle
-The ESP8266 connects to the local Wi-Fi network.
+1. ESP8266 connects to the Wi-Fi network.
+2. Sinric Pro establishes cloud communication.
+3. Users control appliances using the Sinric Pro app or voice assistants.
+4. ESP8266 receives commands and switches the corresponding relay.
+5. Manual switches can also control appliances while keeping cloud status synchronized.
 
-The NodeMCU communicates with the Sinric Pro cloud server.
+---
 
-Users send commands using the Sinric Pro mobile application or voice assistants.
+## Project Structure
 
-The ESP8266 receives the commands and switches the corresponding relay ON or OFF.
+```
+Industry-Oriented-Smart-Home-Automation-System-Using-IoT
+│
+├── SmartHome_ESP8266.ino
+├── README.md
+├── Circuit_Diagram.png
+├── Block_Diagram.png
+├── Images
+│   ├── Prototype.jpg
+│   └── Working.jpg
+└── Report.pdf
+```
 
-Manual switches allow local appliance control while keeping the cloud synchronized.
+---
 
-Applications
-Smart Homes
+## Applications
 
-Smart Offices
+- Smart Homes
+- Smart Offices
+- Smart Buildings
+- Industrial Automation
+- IoT Learning Projects
+- Energy Management Systems
 
-Industrial Automation
+---
 
-Energy Management Systems
+## Future Enhancements
 
-Remote Appliance Monitoring
+- Energy Consumption Monitoring
+- Temperature and Humidity Monitoring
+- Gas Leakage Detection
+- Fire Detection
+- Motion Detection
+- Mobile Notifications
+- AI-Based Automation
+- MQTT Integration
 
-IoT-Based Building Automation
+---
 
-Future Enhancements
-Power Consumption Monitoring
+## Technologies Used
 
-Temperature and Humidity Monitoring
+- C++
+- Arduino IDE
+- ESP8266 NodeMCU
+- IoT
+- Wi-Fi
+- Sinric Pro
+- Embedded Systems
 
-Motion Detection
+---
 
-Fire and Gas Leakage Detection
+## Author
 
-Mobile Notifications
+**Maria Ranjan Morais**
 
-AI-Based Energy Optimization
+---
+
+## License
+
+This project is developed for educational and learning purposes.
